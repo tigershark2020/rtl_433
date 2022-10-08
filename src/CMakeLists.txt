@@ -230,6 +230,7 @@ add_library(r_433 STATIC
     devices/visonic_powercode.c
     devices/waveman.c
     devices/wg_pb12v1.c
+    devices/wireless_motion.c
     devices/ws2032.c
     devices/wssensor.c
     devices/wt0124.c
