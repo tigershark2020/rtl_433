@@ -101,7 +101,7 @@ static int wireless_motion_callback(r_device *decoder, bitbuffer_t *bitbuffer)
 
         data_t *data;
         data = data_make(
-                "model",    "",  DATA_STRING, "Wirreless-Motion",
+                "model",    "",  DATA_STRING, "Wireless-Motion",
                 "code",     "",  DATA_STRING, row_bytes,
                 NULL);
         
