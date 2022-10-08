@@ -95,7 +95,6 @@
     DECL(solight_te44) \
     DECL(smoke_gs558) \
     DECL(generic_motion) \
-    DECL(wireless_motion) \
     DECL(tpms_toyota) \
     DECL(tpms_ford) \
     DECL(tpms_renault) \
@@ -232,6 +231,7 @@
     DECL(fineoffset_wn34) \
     DECL(rubicson_pool_48942) \
     DECL(badger_orion) \
+    DECL(wireless_motion)
 
     /* Add new decoders here. */
 
