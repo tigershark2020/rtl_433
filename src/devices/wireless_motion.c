@@ -99,13 +99,17 @@ static int wireless_motion_callback(r_device *decoder, bitbuffer_t *bitbuffer)
         char row_bytes[BITBUF_COLS * 2 + 1];
         set_row_bytes(row_bytes, bitbuffer->bb[2], bitbuffer->bits_per_row[2]);
 
-        data_t *data;
-        data = data_make(
-                "model",    "",  DATA_STRING, "Wireless-Motion",
-                "code",     "",  DATA_STRING, row_bytes,
-                NULL);
-        
-        decoder_output_data(decoder, data);
+        if(srtlen(set_row_bytes) > 3)
+        {
+            data_t *data;
+            data = data_make(
+            "model",    "",  DATA_STRING, "Wireless-Motion",
+            "code",     "",  DATA_STRING, row_bytes,
+            NULL);
+
+            decoder_output_data(decoder, data);
+        }
+
         return 1;
     }
     else{
