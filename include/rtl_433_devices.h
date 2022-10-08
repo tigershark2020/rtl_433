@@ -95,6 +95,7 @@
     DECL(solight_te44) \
     DECL(smoke_gs558) \
     DECL(generic_motion) \
+    DECL(wireless_motion) \
     DECL(tpms_toyota) \
     DECL(tpms_ford) \
     DECL(tpms_renault) \
